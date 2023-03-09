@@ -3,16 +3,12 @@ import 'dart:developer';
 import 'dart:typed_data';
 import 'dart:io';
 // import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-
 import '../../Connection/Socket/Connection.dart';
-
 import '../../Connection/Socket/Client.dart';
-
 import '../../database/database_helper.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:archive/archive.dart';
 import 'package:path/path.dart';
-
 import '../../Connection/EOD/structures/Reply/TEODReplyHeaderRecord.dart';
 import '../../Connection/EOD/structures/Request/TEODRequestHeaderRecord.dart';
 import '../../Connection/structHelper/IntStruct.dart';
@@ -20,7 +16,9 @@ import '../../util/Dataconstants.dart';
 import '../structHelper/BufferForSock.dart';
 import '../../Connection/ResponseListener.dart';
 
-class EODClient implements Client {
+class EODClient implements Client 
+{
+
   ResponseListener mResponseListener;
   bool isConnected = false, isMasterChecked = false;
   int connectAttemps = 0;
@@ -35,7 +33,8 @@ class EODClient implements Client {
     this.mResponseListener = mResponseListener;
   }
 
-  void connect() {
+  void connect()
+  {
     this.connection = new Connection(
       client: this,
       tag: 'EOD',
@@ -120,8 +119,12 @@ class EODClient implements Client {
     }
   }
 
-  void sendRequestToEODServer(int reqType, int date) {
-    try {
+  void sendRequestToEODServer(int reqType, int date) 
+  {
+
+    try 
+    {
+
       TEODRequestHeaderRecord header = new TEODRequestHeaderRecord();
       IntStruct body = IntStruct(date);
       header.clientID.setValue(Dataconstants.feUserID, 15);
@@ -132,15 +135,18 @@ class EODClient implements Client {
       Uint8List bodyStr = body.toBytes();
       Uint8List byteArr = new Uint8List(hdrStr.length + bodyStr.length);
       byteArr.setRange(0, hdrStr.length, hdrStr, 0);
-      byteArr.setRange(
+      byteArr.setRange
+      (
           hdrStr.length, hdrStr.length + bodyStr.length, bodyStr, 0);
-      if (connection != null) {
+      if (connection != null) 
+      {
         connection.sendRequest(byteArr);
         // FirebaseCrashlytics.instance.log('Master Request Sent');
         return;
       }
       isMasterChecked = true;
-    } catch (e) {}
+    } catch (e) {
+    }
   }
 
   void processReply(Uint8List response) async {

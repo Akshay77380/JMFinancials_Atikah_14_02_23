@@ -2,10 +2,10 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
 import '../../util/Utils.dart';
 
-class NumberField extends StatefulWidget {
+class NumberField extends StatefulWidget
+{
   final TextEditingController numberController;
   final int maxLength;
   final double minValue;
@@ -23,41 +23,54 @@ class NumberField extends StatefulWidget {
   final bool isDisable;
   final bool setDefault;
 
+
   NumberField(
-      {@required this.numberController,
-      @required this.maxLength,
-      this.minValue = 0,
-      this.maxValue = 10000000,
-      this.isInteger = false,
-      this.defaultValue = 1,
-      this.doubleDefaultValue = 1.0,
-      this.hint = '',
-      this.decimalPosition = 2,
-      this.increment = 1,
-      this.doubleIncrement = 1.0,
-      this.isCurr = false,
-      this.isBuy,
-      this.isRupeeLogo,
-      this.isDisable = false,
-      this.setDefault});
+      {
+        Key key,
+        @required this.numberController,
+        @required this.maxLength,
+        this.minValue = 0,
+        this.maxValue = 10000000,
+        this.isInteger = false,
+        this.defaultValue = 1,
+        this.doubleDefaultValue = 1.0,
+        this.hint = '',
+        this.decimalPosition = 2,
+        this.increment = 1,
+        this.doubleIncrement = 1.0,
+        this.isCurr = false,
+        this.isBuy = false,
+        this.isRupeeLogo = false,
+        this.isDisable = false,
+        this.setDefault = false,
+      }) : super(key: key);
 
   @override
   _NumberFieldState createState() => _NumberFieldState();
 }
 
-class _NumberFieldState extends State<NumberField> {
+class _NumberFieldState extends State<NumberField>
+{
+
   bool _isPressed = false;
   int _springDelay = 500;
   bool isBorder = false;
   TextStyle style = TextStyle(fontSize: 25.0);
 
   @override
-  void initState() {
-    if (widget.setDefault == true) if (widget.numberController.text.isEmpty)
-      widget.numberController.text = widget.isInteger ? widget.defaultValue.toInt().toString() : widget.doubleDefaultValue.toStringAsFixed(widget.decimalPosition);
+  void initState()
+  {
     super.initState();
-  }
 
+    // if (widget.setDefault == true) if (widget.numberController.text.isEmpty)
+    //   widget.numberController.text = widget.isInteger ? widget.defaultValue.toInt().toString() : widget.doubleDefaultValue.toStringAsFixed(widget.decimalPosition);
+
+    if (widget.setDefault && widget.numberController.text.isEmpty) {
+      widget.numberController.text = widget.isInteger
+          ? widget.defaultValue.toInt().toString()
+          : widget.doubleDefaultValue.toStringAsFixed(widget.decimalPosition);
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -239,8 +252,7 @@ class _NumberFieldState extends State<NumberField> {
   }
 
   double roundDouble(double value, int places) {
-    double mod = pow(10.0, places);
-    return ((value * mod).round().toDouble() / mod);
+    double mod = pow(10.0, places);   return ((value * mod).round().toDouble() / mod);
   }
 
   void decrement() {

@@ -54,7 +54,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:clevertap_plugin/clevertap_plugin.dart';
 import 'package:flutter_styled_toast/flutter_styled_toast.dart';
-
 // import 'package:ssl_pinning_plugin/ssl_pinning_plugin.dart';
 // AndroidNotificationChannel channel;
 /// Initialize the [FlutterLocalNotificationsPlugin] package.
@@ -85,7 +84,7 @@ void main() async
   // connectionStatus.initialize();
 
   // WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent, // transparent status bar
   ));
 

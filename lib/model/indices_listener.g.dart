@@ -10,7 +10,7 @@ part of 'indices_listener.dart';
 
 mixin _$IndicesListener on _IndicesListener, Store {
    final _$indices1Atom =
-      Atom(name: '_IndicesListener.indices1', );
+      Atom(name: '_IndicesListener.indices1');
 
   @override
   ScripInfoModel get indices1 {
@@ -26,7 +26,7 @@ mixin _$IndicesListener on _IndicesListener, Store {
   }
 
    final _$indices2Atom =
-      Atom(name: '_IndicesListener.indices2', );
+      Atom(name: '_IndicesListener.indices2');
 
   @override
   ScripInfoModel get indices2 {
@@ -42,7 +42,7 @@ mixin _$IndicesListener on _IndicesListener, Store {
   }
 
    final _$indices3Atom =
-      Atom(name: '_IndicesListener.indices3', );
+      Atom(name: '_IndicesListener.indices3');
 
   @override
   ScripInfoModel get indices3 {
@@ -58,7 +58,7 @@ mixin _$IndicesListener on _IndicesListener, Store {
   }
 
    final _$_IndicesListenerActionController =
-      ActionController(name: '_IndicesListener', );
+      ActionController(name: '_IndicesListener');
 
   @override
   void setIndices(int indiceNum, ScripInfoModel model) {

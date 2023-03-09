@@ -18,7 +18,8 @@ class FetchAlgoController extends GetxController {
     fetchAlgoList();
     super.onInit();
   }
-  Future<void> fetchAlgoList({String name}) async {
+  Future<void> fetchAlgoList({String name}) async
+  {
       isLoading(true);
       var url = "${BrokerInfo.algoUrl}/report/api/algo/AlgoList";
       // /api/algo/AlgoList
@@ -51,10 +52,10 @@ class FetchAlgoController extends GetxController {
           .timeout(BrokerInfo.timeoutDuration);
 
       var responseBody= response.body.toString();
-
       var data2 = jsonDecode(response.body);
       var responses = response;
       log("fetch report Response  => $data2");
+      print("fetch data $data2");
       fetchAlgoLists = new List<ListItem>();
       try{
       if(response.statusCode==200){

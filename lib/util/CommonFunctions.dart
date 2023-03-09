@@ -335,6 +335,7 @@ class CommonFunction {
     http.Response response = await Dataconstants.itsClient.httpPostWithHeader(BrokerInfo.mainUrl + BrokerInfo.ApiVersion + "InsertFCMToken", requestJson, Dataconstants.loginData.data.jwtToken);
     // log("verify OTP response - ${response.body.toString()}");
     return response.body.toString();
+    print("DATA SHSH $response");
   }
 
 
@@ -359,7 +360,7 @@ class CommonFunction {
     }
     if (storedToken == null || storedToken != Dataconstants.fcmToken) {
       var response = await setToken(requestTokenJson);
-      print(response);
+      print("Data Got it $response");
     }
     //TODO: Login Aakash start
     print("sdfdsfsdf");

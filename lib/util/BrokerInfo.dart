@@ -75,6 +75,8 @@ class BrokerInfo {
   static String CUGURL = "https://tradeapi.jmfonline.in/cug_middleware/";
   static String UATURL = "https://tradeapiuat.jmfonline.in:9190/";
 
+  static String UATURL_EQUITY = "https://tradeapiuat.jmfonline.in/";
+
   static String ApiVersion = "api/v2/"; //UAT
   // static String ApiVersion = "api/"; //LIVE
   static String openAnAccount = "https://signup.jmfonline.in/open-demat-account/";

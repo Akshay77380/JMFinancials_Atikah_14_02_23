@@ -145,12 +145,6 @@ class _EquitySipScreenState extends State<EquitySipScreen> {
                       returnVal: '39.5',
                       width: width,
                       theme: theme),
-                  topPerformingTile(
-                      sipName: 'RELIANCE',
-                      ltp: '2750',
-                      returnVal: '39.5',
-                      width: width,
-                      theme: theme),
                 ],
               ),
             ),
@@ -610,11 +604,15 @@ class _EquitySipScreenState extends State<EquitySipScreen> {
   }
 
   Widget topPerformingTile(
-      {String sipName,
+      {
+      String sipName,
       String ltp,
       String returnVal,
       double width,
-      ThemeData theme}) {
+      ThemeData theme
+      }
+      )
+  {
     return Column(
       children: [
         Divider(

@@ -9,42 +9,42 @@ part of 'scrip_info_model.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
 
 mixin _$ScripInfoModel on _ScripInfoModel, Store {
-  Computed<String>_$exchNameComputed;
+  Computed<String> _$exchNameComputed;
 
   @override
   String get exchName =>
       (_$exchNameComputed ??= Computed<String>(() => super.exchName,
               name: '_ScripInfoModel.exchName'))
           .value;
-  Computed<double>_$priceChangeComputed;
+  Computed<double> _$priceChangeComputed;
 
   @override
   double get priceChange =>
       (_$priceChangeComputed ??= Computed<double>(() => super.priceChange,
               name: '_ScripInfoModel.priceChange'))
           .value;
-  Computed<String>_$priceChangeTextComputed;
+  Computed<String> _$priceChangeTextComputed;
 
   @override
   String get priceChangeText => (_$priceChangeTextComputed ??= Computed<String>(
           () => super.priceChangeText,
           name: '_ScripInfoModel.priceChangeText'))
       .value;
-  Computed<String>_$openInterestTextComputed;
+  Computed<String> _$openInterestTextComputed;
 
   @override
   String get openInterestText => (_$openInterestTextComputed ??=
           Computed<String>(() => super.openInterestText,
               name: '_ScripInfoModel.openInterestText'))
       .value;
-  Computed<String>_$percentChangeTextComputed;
+  Computed<String> _$percentChangeTextComputed;
 
   @override
   String get percentChangeText => (_$percentChangeTextComputed ??=
           Computed<String>(() => super.percentChangeText,
               name: '_ScripInfoModel.percentChangeText'))
       .value;
-  Computed<String>_$optionChainPercentChangeTextComputed;
+  Computed<String> _$optionChainPercentChangeTextComputed;
 
   @override
   String get optionChainPercentChangeText =>
@@ -52,41 +52,41 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
               () => super.optionChainPercentChangeText,
               name: '_ScripInfoModel.optionChainPercentChangeText'))
           .value;
-  Computed<Key>_$watchListKeyComputed;
+  Computed<Key> _$watchListKeyComputed;
 
   @override
   Key get watchListKey =>
       (_$watchListKeyComputed ??= Computed<Key>(() => super.watchListKey,
               name: '_ScripInfoModel.watchListKey'))
           .value;
-  Computed<String>_$price1Computed;
+  Computed<String> _$price1Computed;
 
   @override
   String get price1 => (_$price1Computed ??=
           Computed<String>(() => super.price1, name: '_ScripInfoModel.price1'))
       .value;
-  Computed<String>_$lastTickQtyTextComputed;
+  Computed<String> _$lastTickQtyTextComputed;
 
   @override
   String get lastTickQtyText => (_$lastTickQtyTextComputed ??= Computed<String>(
           () => super.lastTickQtyText,
           name: '_ScripInfoModel.lastTickQtyText'))
       .value;
-  Computed<String>_$lastTradeTimeTextComputed;
+  Computed<String> _$lastTradeTimeTextComputed;
 
   @override
   String get lastTradeTimeText => (_$lastTradeTimeTextComputed ??=
           Computed<String>(() => super.lastTradeTimeText,
               name: '_ScripInfoModel.lastTradeTimeText'))
       .value;
-  Computed<double>_$bidTotalValComputed;
+  Computed<double> _$bidTotalValComputed;
 
   @override
   double get bidTotalVal =>
       (_$bidTotalValComputed ??= Computed<double>(() => super.bidTotalVal,
               name: '_ScripInfoModel.bidTotalVal'))
           .value;
-  Computed<double>_$askTotalValComputed;
+  Computed<double> _$askTotalValComputed;
 
   @override
   double get askTotalVal =>
@@ -95,7 +95,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
           .value;
 
    final _$alternateModelAtom =
-      Atom(name: '_ScripInfoModel.alternateModel', );
+      Atom(name: '_ScripInfoModel.alternateModel');
 
   @override
   ScripInfoModel get alternateModel {
@@ -111,7 +111,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$exTypeAtom =
-      Atom(name: '_ScripInfoModel.exType', );
+      Atom(name: '_ScripInfoModel.exType');
 
   @override
   int get exType {
@@ -127,7 +127,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$lastTickRateAtom =
-      Atom(name: '_ScripInfoModel.lastTickRate', );
+      Atom(name: '_ScripInfoModel.lastTickRate');
 
   @override
   double get lastTickRate {
@@ -143,7 +143,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$exchQtyAtom =
-      Atom(name: '_ScripInfoModel.exchQty', );
+      Atom(name: '_ScripInfoModel.exchQty');
 
   @override
   int get exchQty {
@@ -159,7 +159,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$exchValueAtom =
-      Atom(name: '_ScripInfoModel.exchValue', );
+      Atom(name: '_ScripInfoModel.exchValue');
 
   @override
   double get exchValue {
@@ -174,7 +174,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
     });
   }
 
-   final _$openAtom = Atom(name: '_ScripInfoModel.open', );
+   final _$openAtom = Atom(name: '_ScripInfoModel.open');
 
   @override
   double get open {
@@ -189,7 +189,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
     });
   }
 
-   final _$highAtom = Atom(name: '_ScripInfoModel.high', );
+   final _$highAtom = Atom(name: '_ScripInfoModel.high');
 
   @override
   double get high {
@@ -204,7 +204,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
     });
   }
 
-   final _$lowAtom = Atom(name: '_ScripInfoModel.low', );
+   final _$lowAtom = Atom(name: '_ScripInfoModel.low');
 
   @override
   double get low {
@@ -220,7 +220,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$prevDayCloseAtom =
-      Atom(name: '_ScripInfoModel.prevDayClose', );
+      Atom(name: '_ScripInfoModel.prevDayClose');
 
   @override
   double get prevDayClose {
@@ -236,7 +236,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$closeAtom =
-      Atom(name: '_ScripInfoModel.close', );
+      Atom(name: '_ScripInfoModel.close');
 
   @override
   double get close {
@@ -252,7 +252,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$priceColorAtom =
-      Atom(name: '_ScripInfoModel.priceColor', );
+      Atom(name: '_ScripInfoModel.priceColor');
 
   @override
   int get priceColor {
@@ -268,7 +268,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$lastTickQtyAtom =
-      Atom(name: '_ScripInfoModel.lastTickQty', );
+      Atom(name: '_ScripInfoModel.lastTickQty');
 
   @override
   int get lastTickQty {
@@ -284,7 +284,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$avgTradePriceAtom =
-      Atom(name: '_ScripInfoModel.avgTradePrice', );
+      Atom(name: '_ScripInfoModel.avgTradePrice');
 
   @override
   double get avgTradePrice {
@@ -300,7 +300,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$percentChangeAtom =
-      Atom(name: '_ScripInfoModel.percentChange', );
+      Atom(name: '_ScripInfoModel.percentChange');
 
   @override
   double get percentChange {
@@ -316,7 +316,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$currRateAtom =
-      Atom(name: '_ScripInfoModel.currRate', );
+      Atom(name: '_ScripInfoModel.currRate');
 
   @override
   double get currRate {
@@ -332,7 +332,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$totalBuyQtyAtom =
-      Atom(name: '_ScripInfoModel.totalBuyQty', );
+      Atom(name: '_ScripInfoModel.totalBuyQty');
 
   @override
   int get totalBuyQty {
@@ -348,7 +348,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$totalSellQtyAtom =
-      Atom(name: '_ScripInfoModel.totalSellQty', );
+      Atom(name: '_ScripInfoModel.totalSellQty');
 
   @override
   int get totalSellQty {
@@ -364,7 +364,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$openInterestXAtom =
-      Atom(name: '_ScripInfoModel.openInterestX', );
+      Atom(name: '_ScripInfoModel.openInterestX');
 
   @override
   int get openInterestX {
@@ -380,7 +380,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$openInterestHighXAtom =
-      Atom(name: '_ScripInfoModel.openInterestHighX', );
+      Atom(name: '_ScripInfoModel.openInterestHighX');
 
   @override
   int get openInterestHighX {
@@ -396,7 +396,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$openInterestLowXAtom =
-      Atom(name: '_ScripInfoModel.openInterestLowX', );
+      Atom(name: '_ScripInfoModel.openInterestLowX');
 
   @override
   int get openInterestLowX {
@@ -412,7 +412,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$upperCktLimitAtom =
-      Atom(name: '_ScripInfoModel.upperCktLimit', );
+      Atom(name: '_ScripInfoModel.upperCktLimit');
 
   @override
   double get upperCktLimit {
@@ -428,7 +428,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$lowerCktLimitAtom =
-      Atom(name: '_ScripInfoModel.lowerCktLimit', );
+      Atom(name: '_ScripInfoModel.lowerCktLimit');
 
   @override
   double get lowerCktLimit {
@@ -444,7 +444,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$isOptionAtom =
-      Atom(name: '_ScripInfoModel.isOption', );
+      Atom(name: '_ScripInfoModel.isOption');
 
   @override
   bool get isOption {
@@ -460,7 +460,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidRate1Atom =
-      Atom(name: '_ScripInfoModel.bidRate1', );
+      Atom(name: '_ScripInfoModel.bidRate1');
 
   @override
   double get bidRate1 {
@@ -476,7 +476,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidOrder1Atom =
-      Atom(name: '_ScripInfoModel.bidOrder1', );
+      Atom(name: '_ScripInfoModel.bidOrder1');
 
   @override
   int get bidOrder1 {
@@ -492,7 +492,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidQty1Atom =
-      Atom(name: '_ScripInfoModel.bidQty1', );
+      Atom(name: '_ScripInfoModel.bidQty1');
 
   @override
   int get bidQty1 {
@@ -508,7 +508,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerRate1Atom =
-      Atom(name: '_ScripInfoModel.offerRate1', );
+      Atom(name: '_ScripInfoModel.offerRate1');
 
   @override
   double get offerRate1 {
@@ -524,7 +524,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerOrder1Atom =
-      Atom(name: '_ScripInfoModel.offerOrder1', );
+      Atom(name: '_ScripInfoModel.offerOrder1');
 
   @override
   int get offerOrder1 {
@@ -540,7 +540,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerQty1Atom =
-      Atom(name: '_ScripInfoModel.offerQty1', );
+      Atom(name: '_ScripInfoModel.offerQty1');
 
   @override
   int get offerQty1 {
@@ -556,7 +556,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidRate2Atom =
-      Atom(name: '_ScripInfoModel.bidRate2', );
+      Atom(name: '_ScripInfoModel.bidRate2');
 
   @override
   double get bidRate2 {
@@ -572,7 +572,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidOrder2Atom =
-      Atom(name: '_ScripInfoModel.bidOrder2', );
+      Atom(name: '_ScripInfoModel.bidOrder2');
 
   @override
   int get bidOrder2 {
@@ -588,7 +588,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidQty2Atom =
-      Atom(name: '_ScripInfoModel.bidQty2', );
+      Atom(name: '_ScripInfoModel.bidQty2');
 
   @override
   int get bidQty2 {
@@ -604,7 +604,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerRate2Atom =
-      Atom(name: '_ScripInfoModel.offerRate2', );
+      Atom(name: '_ScripInfoModel.offerRate2');
 
   @override
   double get offerRate2 {
@@ -620,7 +620,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerOrder2Atom =
-      Atom(name: '_ScripInfoModel.offerOrder2', );
+      Atom(name: '_ScripInfoModel.offerOrder2');
 
   @override
   int get offerOrder2 {
@@ -636,7 +636,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerQty2Atom =
-      Atom(name: '_ScripInfoModel.offerQty2', );
+      Atom(name: '_ScripInfoModel.offerQty2');
 
   @override
   int get offerQty2 {
@@ -652,7 +652,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidRate3Atom =
-      Atom(name: '_ScripInfoModel.bidRate3', );
+      Atom(name: '_ScripInfoModel.bidRate3');
 
   @override
   double get bidRate3 {
@@ -668,7 +668,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidOrder3Atom =
-      Atom(name: '_ScripInfoModel.bidOrder3', );
+      Atom(name: '_ScripInfoModel.bidOrder3');
 
   @override
   int get bidOrder3 {
@@ -684,7 +684,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidQty3Atom =
-      Atom(name: '_ScripInfoModel.bidQty3', );
+      Atom(name: '_ScripInfoModel.bidQty3');
 
   @override
   int get bidQty3 {
@@ -700,7 +700,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerRate3Atom =
-      Atom(name: '_ScripInfoModel.offerRate3', );
+      Atom(name: '_ScripInfoModel.offerRate3');
 
   @override
   double get offerRate3 {
@@ -716,7 +716,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerOrder3Atom =
-      Atom(name: '_ScripInfoModel.offerOrder3', );
+      Atom(name: '_ScripInfoModel.offerOrder3');
 
   @override
   int get offerOrder3 {
@@ -732,7 +732,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerQty3Atom =
-      Atom(name: '_ScripInfoModel.offerQty3', );
+      Atom(name: '_ScripInfoModel.offerQty3');
 
   @override
   int get offerQty3 {
@@ -748,7 +748,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidRate4Atom =
-      Atom(name: '_ScripInfoModel.bidRate4', );
+      Atom(name: '_ScripInfoModel.bidRate4');
 
   @override
   double get bidRate4 {
@@ -764,7 +764,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidOrder4Atom =
-      Atom(name: '_ScripInfoModel.bidOrder4', );
+      Atom(name: '_ScripInfoModel.bidOrder4');
 
   @override
   int get bidOrder4 {
@@ -780,7 +780,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidQty4Atom =
-      Atom(name: '_ScripInfoModel.bidQty4', );
+      Atom(name: '_ScripInfoModel.bidQty4');
 
   @override
   int get bidQty4 {
@@ -796,7 +796,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerRate4Atom =
-      Atom(name: '_ScripInfoModel.offerRate4', );
+      Atom(name: '_ScripInfoModel.offerRate4');
 
   @override
   double get offerRate4 {
@@ -812,7 +812,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerOrder4Atom =
-      Atom(name: '_ScripInfoModel.offerOrder4', );
+      Atom(name: '_ScripInfoModel.offerOrder4');
 
   @override
   int get offerOrder4 {
@@ -828,7 +828,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerQty4Atom =
-      Atom(name: '_ScripInfoModel.offerQty4', );
+      Atom(name: '_ScripInfoModel.offerQty4');
 
   @override
   int get offerQty4 {
@@ -844,7 +844,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidRate5Atom =
-      Atom(name: '_ScripInfoModel.bidRate5', );
+      Atom(name: '_ScripInfoModel.bidRate5');
 
   @override
   double get bidRate5 {
@@ -860,7 +860,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidOrder5Atom =
-      Atom(name: '_ScripInfoModel.bidOrder5', );
+      Atom(name: '_ScripInfoModel.bidOrder5');
 
   @override
   int get bidOrder5 {
@@ -876,7 +876,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$bidQty5Atom =
-      Atom(name: '_ScripInfoModel.bidQty5', );
+      Atom(name: '_ScripInfoModel.bidQty5');
 
   @override
   int get bidQty5 {
@@ -892,7 +892,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerRate5Atom =
-      Atom(name: '_ScripInfoModel.offerRate5', );
+      Atom(name: '_ScripInfoModel.offerRate5');
 
   @override
   double get offerRate5 {
@@ -908,7 +908,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerOrder5Atom =
-      Atom(name: '_ScripInfoModel.offerOrder5', );
+      Atom(name: '_ScripInfoModel.offerOrder5');
 
   @override
   int get offerOrder5 {
@@ -924,7 +924,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$offerQty5Atom =
-      Atom(name: '_ScripInfoModel.offerQty5', );
+      Atom(name: '_ScripInfoModel.offerQty5');
 
   @override
   int get offerQty5 {
@@ -940,7 +940,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$openInterestAtom =
-      Atom(name: '_ScripInfoModel.openInterest', );
+      Atom(name: '_ScripInfoModel.openInterest');
 
   @override
   int get openInterest {
@@ -956,7 +956,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$yearlyHighAtom =
-      Atom(name: '_ScripInfoModel.yearlyHigh', );
+      Atom(name: '_ScripInfoModel.yearlyHigh');
 
   @override
   double get yearlyHigh {
@@ -972,7 +972,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$yearlyLowAtom =
-      Atom(name: '_ScripInfoModel.yearlyLow', );
+      Atom(name: '_ScripInfoModel.yearlyLow');
 
   @override
   double get yearlyLow {
@@ -988,7 +988,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$lastTradeTimeAtom =
-      Atom(name: '_ScripInfoModel.lastTradeTime', );
+      Atom(name: '_ScripInfoModel.lastTradeTime');
 
   @override
   int get lastTradeTime {
@@ -1004,7 +1004,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$chartMinCloseAtom =
-      Atom(name: '_ScripInfoModel.chartMinClose', );
+      Atom(name: '_ScripInfoModel.chartMinClose');
 
   @override
   ObservableMap<int, ObservableList<double>> get chartMinClose {
@@ -1020,7 +1020,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$dataPointAtom =
-      Atom(name: '_ScripInfoModel.dataPoint', );
+     Atom(name: '_ScripInfoModel.dataPoint');
 
   @override
   ObservableMap<int, ObservableList<FlSpot>> get dataPoint {
@@ -1036,7 +1036,7 @@ mixin _$ScripInfoModel on _ScripInfoModel, Store {
   }
 
    final _$_ScripInfoModelActionController =
-      ActionController(name: '_ScripInfoModel', );
+      ActionController(name: '_ScripInfoModel');
 
   @override
   void resetBidOffer() {

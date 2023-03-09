@@ -24,7 +24,8 @@ class EquitySipOrderScreen extends StatefulWidget {
 
 class _EquitySipOrderScreenState extends State<EquitySipOrderScreen> {
   final  GlobalKey<ScaffoldMessengerState> _scaffoldKey = GlobalKey<ScaffoldMessengerState>();
-  TextEditingController _qtyContoller, _durationController;
+  TextEditingController _qtyContoller = TextEditingController();
+  TextEditingController  _durationController = TextEditingController();
   bool _isMandate = false, showMarginCalculation = true, _agreeTerms = true;
   List<String> items = ['Monthly'];
   DateTime selectedDate = DateTime.now();
@@ -275,11 +276,11 @@ class _EquitySipOrderScreenState extends State<EquitySipOrderScreen> {
                       ),
                       const SizedBox(height: 10),
                       NumberField(
-                        maxLength: 10,
+                        maxLength: 5,
                         numberController: _qtyContoller,
                         hint: 'Quantity',
-                        isInteger: true,
-                        isBuy: true,
+                        isInteger: false,
+                        isBuy: false,
                       ),
                       const SizedBox(height: 20),
                       Text(
@@ -382,7 +383,7 @@ class _EquitySipOrderScreenState extends State<EquitySipOrderScreen> {
                       ),
                       const SizedBox(height: 10),
                       NumberField(
-                        maxLength: 10,
+                        maxLength: 5,
                         numberController: _durationController,
                         hint: 'Duration',
                         isInteger: true,
@@ -526,8 +527,10 @@ class _EquitySipOrderScreenState extends State<EquitySipOrderScreen> {
                       'START SIP',
                       style: Utils.fonts(color: Utils.whiteColor),
                     ),
-                    onPressed: () {
+                    onPressed: ()
+                    {
                       _validate(false);
+
                     },
                   ),
                 ),
@@ -539,7 +542,8 @@ class _EquitySipOrderScreenState extends State<EquitySipOrderScreen> {
     );
   }
 
-  void _validate(bool isSummary) {
+  void _validate(bool isSummary)
+  {
     var endDate = DateTime(
         selectedDate.year,
         selectedDate.month + int.tryParse(_durationController.text),
@@ -581,21 +585,35 @@ class _EquitySipOrderScreenState extends State<EquitySipOrderScreen> {
     }
     if (isSummary)
       showModalBottomSheet(
-          isScrollControlled: true,
-          context: context,
-          backgroundColor: Colors.transparent,
-          builder: (context) => EquitySipOrderReview(
-                qty: _qtyContoller.text,
-                frequency: 'Monthly',
-                duration: _durationController.text,
-                name: widget.model.name,
-                exch: widget.model.exch,
-                startDate:
-                    DateFormat('dd MMM yyyy').format(selectedDate).toString(),
-                endDate: DateFormat('dd MMM yyyy').format(endDate).toString(),
-                ltp: widget.model.close.toStringAsFixed(2),
-                ordeValue: calculateRequiredMargin(widget.model),
-              ));
+        isScrollControlled: true,
+        context: context,
+        backgroundColor: Colors.transparent,
+        builder: (context) => Container(
+          height: MediaQuery.of(context).size.height * 0.8,
+          width: MediaQuery.of(context).size.width,
+          child: Column(
+            children: [
+              Expanded(
+                child: EquitySipOrderReview(
+                  qty: _qtyContoller.text,
+                  frequency: 'Monthly',
+                  duration: _durationController.text,
+                  name: widget.model.name,
+                  exch: widget.model.exch,
+                  startDate: DateFormat('dd MMM yyyy').format(selectedDate).toString(),
+                  endDate: DateFormat('dd MMM yyyy').format(endDate).toString(),
+                  ltp: widget.model.close.toStringAsFixed(2),
+                  ordeValue: calculateRequiredMargin(widget.model),
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+
+
+
+
   }
 
   String calculateRequiredMargin(ScripInfoModel model) {

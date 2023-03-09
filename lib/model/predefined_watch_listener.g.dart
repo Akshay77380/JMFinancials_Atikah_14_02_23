@@ -10,7 +10,7 @@ part of 'predefined_watch_listener.dart';
 
 mixin _$predefined_watch_listener on _predefined_watch_listener, Store {
    final _$watchListAtom =
-      Atom(name: '_predefined_watch_listener.watchList', );
+      Atom(name: '_predefined_watch_listener.watchList');
 
   @override
   ObservableList<ScripInfoModel> get watchList {
@@ -26,7 +26,7 @@ mixin _$predefined_watch_listener on _predefined_watch_listener, Store {
   }
 
    final _$watchListNameAtom =
-      Atom(name: '_predefined_watch_listener.watchListName', );
+      Atom(name: '_predefined_watch_listener.watchListName');
 
   @override
   String get watchListName {
@@ -42,8 +42,7 @@ mixin _$predefined_watch_listener on _predefined_watch_listener, Store {
   }
 
    final _$addToPredefinedWatchListBulkAsyncAction = AsyncAction(
-      '_predefined_watch_listener.addToPredefinedWatchListBulk',
-      );
+      '_predefined_watch_listener.addToPredefinedWatchListBulk');
 
   @override
   Future<void> addToPredefinedWatchListBulk(
@@ -62,7 +61,7 @@ mixin _$predefined_watch_listener on _predefined_watch_listener, Store {
   }
 
    final _$_predefined_watch_listenerActionController =
-      ActionController(name: '_predefined_watch_listener', );
+      ActionController(name: '_predefined_watch_listener');
 
   @override
   void sortListbyName(bool isDescending) {

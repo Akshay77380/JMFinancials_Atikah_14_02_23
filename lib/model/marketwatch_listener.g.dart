@@ -10,7 +10,7 @@ part of 'marketwatch_listener.dart';
 
 mixin _$MarketwatchListener on _MarketwatchListener, Store {
    final _$watchListAtom =
-      Atom(name: '_MarketwatchListener.watchList', );
+      Atom(name: '_MarketwatchListener.watchList');
 
   @override
   ObservableList<ScripInfoModel> get watchList {
@@ -26,7 +26,7 @@ mixin _$MarketwatchListener on _MarketwatchListener, Store {
   }
 
    final _$watchListNameAtom =
-      Atom(name: '_MarketwatchListener.watchListName', );
+      Atom(name: '_MarketwatchListener.watchListName');
 
   @override
   String get watchListName {
@@ -42,8 +42,7 @@ mixin _$MarketwatchListener on _MarketwatchListener, Store {
   }
 
    final _$addToPredefinedWatchListBulkAsyncAction = AsyncAction(
-      '_MarketwatchListener.addToPredefinedWatchListBulk',
-      );
+      '_MarketwatchListener.addToPredefinedWatchListBulk');
 
   @override
   Future<void> addToPredefinedWatchListBulk(
@@ -62,8 +61,7 @@ mixin _$MarketwatchListener on _MarketwatchListener, Store {
   }
 
    final _$addToIndicesWatchListBulkAsyncAction = AsyncAction(
-      '_MarketwatchListener.addToIndicesWatchListBulk',
-      );
+      '_MarketwatchListener.addToIndicesWatchListBulk');
 
   @override
   Future<void> addToIndicesWatchListBulk(
@@ -73,7 +71,7 @@ mixin _$MarketwatchListener on _MarketwatchListener, Store {
   }
 
    final _$_MarketwatchListenerActionController =
-      ActionController(name: '_MarketwatchListener', );
+      ActionController(name: '_MarketwatchListener');
 
   @override
   void addToWatchList(ScripInfoModel model) {

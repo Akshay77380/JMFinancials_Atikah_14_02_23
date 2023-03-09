@@ -49,8 +49,7 @@ class _MarketOverViewState extends State<MarketOverView> {
   var guruPortfolio = 1;
   bool sensexFlag = false, niftyFlag = true, bankNiftyFlag = false;
   var topGainersExpanded = false;
-  final DateFormat formatter = DateFormat('dd/MM/yyyy');
-
+  final DateFormat formatter = DateFormat('dd/MM/yyyy');  
   var totalMarketValueNifty, totalMarketValueSensex;
 
   @override

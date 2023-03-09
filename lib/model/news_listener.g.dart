@@ -9,7 +9,7 @@ part of 'news_listener.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
 
 mixin _$NewsListener on _NewsListener, Store {
-  Computed<List<String>>_$currentFiltersComputed;
+  Computed<List<String>> _$currentFiltersComputed;
 
   @override
   List<String> get currentFilters => (_$currentFiltersComputed ??=
@@ -17,8 +17,8 @@ mixin _$NewsListener on _NewsListener, Store {
               name: '_NewsListener.currentFilters'))
       .value;
 
-  final _$filteredNewsAtom =
-      Atom(name: '_NewsListener.filteredNews',);
+   final _$filteredNewsAtom =
+      Atom(name: '_NewsListener.filteredNews');
 
   @override
   ObservableList<NewsRecordModel> get filteredNews {
@@ -34,7 +34,7 @@ mixin _$NewsListener on _NewsListener, Store {
   }
 
    final _$filtersAtom =
-      Atom(name: '_NewsListener.filters', );
+      Atom(name: '_NewsListener.filters');
 
   @override
   ObservableMap<String, bool> get filters {
@@ -50,7 +50,7 @@ mixin _$NewsListener on _NewsListener, Store {
   }
 
    final _$_NewsListenerActionController =
-      ActionController(name: '_NewsListener', );
+      ActionController(name: '_NewsListener');
 
   @override
   void addToNewsList(List<NewsRecordModel> models) {

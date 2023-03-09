@@ -281,7 +281,7 @@ class _EquitySipScreenState extends State<EquitySipOrderReportScreen>
                         child: TextField(
                           onChanged: (value) {},
                           decoration: InputDecoration(
-                            hintText: 'Search Scrip',
+                            hintText: 'Search Script',
                             border: InputBorder.none,
                             prefixIcon: Padding(
                               padding: const EdgeInsets.only(bottom: 5),

@@ -10,7 +10,7 @@ part of 'researchcallsController.dart';
 
 mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
    final _$researchCallsAtom =
-      Atom(name: '_ResearchCallsModelBase.researchCalls', );
+      Atom(name: '_ResearchCallsModelBase.researchCalls');
 
   @override
   ResearchCalls get researchCalls {
@@ -26,7 +26,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$_searchTextAtom =
-      Atom(name: '_ResearchCallsModelBase._searchText', );
+      Atom(name: '_ResearchCallsModelBase._searchText');
 
   @override
   String get _searchText {
@@ -42,7 +42,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$fetchingDataAtom =
-      Atom(name: '_ResearchCallsModelBase.fetchingData', );
+      Atom(name: '_ResearchCallsModelBase.fetchingData');
 
   @override
   bool get fetchingData {
@@ -58,7 +58,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$investmentSelectedChipAtom = Atom(
-      name: '_ResearchCallsModelBase.investmentSelectedChip', );
+      name: '_ResearchCallsModelBase.investmentSelectedChip');
 
   @override
   int get investmentSelectedChip {
@@ -75,7 +75,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$tradingSelectedChipAtom = Atom(
-      name: '_ResearchCallsModelBase.tradingSelectedChip', );
+      name: '_ResearchCallsModelBase.tradingSelectedChip');
 
   @override
   int get tradingSelectedChip {
@@ -91,7 +91,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$fnoSelectedChipAtom =
-      Atom(name: '_ResearchCallsModelBase.fnoSelectedChip', );
+      Atom(name: '_ResearchCallsModelBase.fnoSelectedChip');
 
   @override
   int get fnoSelectedChip {
@@ -107,7 +107,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$intradayListAtom =
-      Atom(name: '_ResearchCallsModelBase.intradayList', );
+      Atom(name: '_ResearchCallsModelBase.intradayList');
 
   @override
   List<ResearchCallsDatum> get intradayList {
@@ -123,7 +123,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$intradayListBackupAtom = Atom(
-      name: '_ResearchCallsModelBase.intradayListBackup', );
+      name: '_ResearchCallsModelBase.intradayListBackup');
 
   @override
   List<ResearchCallsDatum> get intradayListBackup {
@@ -139,7 +139,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$momentumListAtom =
-      Atom(name: '_ResearchCallsModelBase.momentumList', );
+      Atom(name: '_ResearchCallsModelBase.momentumList');
 
   @override
   List<ResearchCallsDatum> get momentumList {
@@ -155,7 +155,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$momentumListBackupAtom = Atom(
-      name: '_ResearchCallsModelBase.momentumListBackup', );
+      name: '_ResearchCallsModelBase.momentumListBackup');
 
   @override
   List<ResearchCallsDatum> get momentumListBackup {
@@ -171,7 +171,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$largeCapListAtom =
-      Atom(name: '_ResearchCallsModelBase.largeCapList', );
+      Atom(name: '_ResearchCallsModelBase.largeCapList');
 
   @override
   List<ResearchCallsDatum> get largeCapList {
@@ -187,7 +187,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$largeCapListBackupAtom = Atom(
-      name: '_ResearchCallsModelBase.largeCapListBackup', );
+      name: '_ResearchCallsModelBase.largeCapListBackup');
 
   @override
   List<ResearchCallsDatum> get largeCapListBackup {
@@ -203,7 +203,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$midCapListAtom =
-      Atom(name: '_ResearchCallsModelBase.midCapList', );
+      Atom(name: '_ResearchCallsModelBase.midCapList');
 
   @override
   List<ResearchCallsDatum> get midCapList {
@@ -219,7 +219,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$midCapListBackupAtom =
-      Atom(name: '_ResearchCallsModelBase.midCapListBackup', );
+      Atom(name: '_ResearchCallsModelBase.midCapListBackup');
 
   @override
   List<ResearchCallsDatum> get midCapListBackup {
@@ -235,7 +235,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$smallCapListAtom =
-      Atom(name: '_ResearchCallsModelBase.smallCapList', );
+      Atom(name: '_ResearchCallsModelBase.smallCapList');
 
   @override
   List<ResearchCallsDatum> get smallCapList {
@@ -251,7 +251,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$smallCapListBackupAtom = Atom(
-      name: '_ResearchCallsModelBase.smallCapListBackup', );
+      name: '_ResearchCallsModelBase.smallCapListBackup');
 
   @override
   List<ResearchCallsDatum> get smallCapListBackup {
@@ -267,7 +267,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$futureListAtom =
-      Atom(name: '_ResearchCallsModelBase.futureList', );
+      Atom(name: '_ResearchCallsModelBase.futureList');
 
   @override
   List<ResearchCallsDatum> get futureList {
@@ -283,7 +283,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$futureListBackupAtom =
-      Atom(name: '_ResearchCallsModelBase.futureListBackup', );
+      Atom(name: '_ResearchCallsModelBase.futureListBackup');
 
   @override
   List<ResearchCallsDatum> get futureListBackup {
@@ -299,7 +299,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$optionListAtom =
-      Atom(name: '_ResearchCallsModelBase.optionList', );
+      Atom(name: '_ResearchCallsModelBase.optionList');
 
   @override
   List<ResearchCallsDatum> get optionList {
@@ -315,7 +315,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$optionListBackupAtom =
-      Atom(name: '_ResearchCallsModelBase.optionListBackup', );
+      Atom(name: '_ResearchCallsModelBase.optionListBackup');
 
   @override
   List<ResearchCallsDatum> get optionListBackup {
@@ -331,7 +331,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$currencyListAtom =
-      Atom(name: '_ResearchCallsModelBase.currencyList', );
+      Atom(name: '_ResearchCallsModelBase.currencyList');
 
   @override
   List<ResearchCallsDatum> get currencyList {
@@ -347,7 +347,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$currencyListBackupAtom = Atom(
-      name: '_ResearchCallsModelBase.currencyListBackup', );
+      name: '_ResearchCallsModelBase.currencyListBackup');
 
   @override
   List<ResearchCallsDatum> get currencyListBackup {
@@ -363,7 +363,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$commodityListAtom =
-      Atom(name: '_ResearchCallsModelBase.commodityList', );
+      Atom(name: '_ResearchCallsModelBase.commodityList');
 
   @override
   List<ResearchCallsDatum> get commodityList {
@@ -379,7 +379,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$commodityListBackupAtom = Atom(
-      name: '_ResearchCallsModelBase.commodityListBackup', );
+      name: '_ResearchCallsModelBase.commodityListBackup');
 
   @override
   List<ResearchCallsDatum> get commodityListBackup {
@@ -395,7 +395,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$searchResearchAtom =
-      Atom(name: '_ResearchCallsModelBase.searchResearch', );
+      Atom(name: '_ResearchCallsModelBase.searchResearch');
 
   @override
   List<ResearchCallsDatum> get searchResearch {
@@ -411,7 +411,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$filterResearchAtom =
-      Atom(name: '_ResearchCallsModelBase.filterResearch', );
+      Atom(name: '_ResearchCallsModelBase.filterResearch');
 
   @override
   List<ResearchCallsDatum> get filterResearch {
@@ -427,7 +427,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$searchIClickToGainAtom = Atom(
-      name: '_ResearchCallsModelBase.searchIClickToGain', );
+      name: '_ResearchCallsModelBase.searchIClickToGain');
 
   @override
   List<ResearchCallsDatum> get searchIClickToGain {
@@ -443,7 +443,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$researchSearchListAtom = Atom(
-      name: '_ResearchCallsModelBase.researchSearchList', );
+      name: '_ResearchCallsModelBase.researchSearchList');
 
   @override
   List<ResearchCallsDatum> get researchSearchList {
@@ -459,7 +459,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
    final _$_ResearchCallsModelBaseActionController =
-      ActionController(name: '_ResearchCallsModelBase', );
+      ActionController(name: '_ResearchCallsModelBase');
 
   @override
   void updateFetchingData(bool value) {
@@ -552,7 +552,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   @override
   dynamic filterResearchTrading([String filterText = '']) {
     final _$actionInfo = _$_ResearchCallsModelBaseActionController.startAction(
-        name: '_ResearchCallsModelBase.filterIClickToGainTrading');
+        name: '_ResearchCallsModelBase.filterResearchTrading');
     try {
       return super.filterResearchTrading(filterText);
     } finally {
@@ -561,9 +561,20 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   }
 
   @override
+  dynamic filterResearchInvestment([String filterText = '']) {
+    final _$actionInfo = _$_ResearchCallsModelBaseActionController.startAction(
+        name: '_ResearchCallsModelBase.filterResearchInvestment');
+    try {
+      return super.filterResearchInvestment(filterText);
+    } finally {
+      _$_ResearchCallsModelBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   dynamic filterResearchFutureOption([String filterText = '']) {
     final _$actionInfo = _$_ResearchCallsModelBaseActionController.startAction(
-        name: '_ResearchCallsModelBase.filterIClickToGainFutureOption');
+        name: '_ResearchCallsModelBase.filterResearchFutureOption');
     try {
       return super.filterResearchFutureOption(filterText);
     } finally {
@@ -574,7 +585,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   @override
   dynamic filterResearchCurrency([String filterText = '']) {
     final _$actionInfo = _$_ResearchCallsModelBaseActionController.startAction(
-        name: '_ResearchCallsModelBase.filterIClickToGainCurrency');
+        name: '_ResearchCallsModelBase.filterResearchCurrency');
     try {
       return super.filterResearchCurrency(filterText);
     } finally {
@@ -585,7 +596,7 @@ mixin _$ResearchCallsModel on _ResearchCallsModelBase, Store {
   @override
   dynamic filterResearchCommodity([String filterText = '']) {
     final _$actionInfo = _$_ResearchCallsModelBaseActionController.startAction(
-        name: '_ResearchCallsModelBase.filterIClickToGainCommodity');
+        name: '_ResearchCallsModelBase.filterResearchCommodity');
     try {
       return super.filterResearchCommodity(filterText);
     } finally {
